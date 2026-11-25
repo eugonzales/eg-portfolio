@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=7" />
+    <link rel="stylesheet" href="styles.css?v=17" />
   </head>
   <body>
     <header class="topbar">
@@ -24,15 +24,18 @@
 
     <main class="hero">
       <section class="profile">
-        <button class="avatar" type="button" aria-label="Reveal your identity" aria-pressed="false">
-          <img class="avatar-doomsday" src="assets/doomsday-default.jpg" alt="" />
-          <img class="avatar-identity" src="assets/identity-reveal.png" alt="" />
-        </button>
+        <div class="profile-avatar">
+          <button class="avatar" type="button" aria-label="Reveal your identity" aria-pressed="false">
+            <img class="avatar-doomsday" src="assets/doomsday-default.jpg" alt="" />
+            <img class="avatar-identity" src="assets/identity-reveal.png" alt="" />
+          </button>
+          <span class="avatar-hint">Hover to reveal</span>
+        </div>
         <div class="identity">
           <h1>Eugene Gonzales <span class="verified" title="Verified">✓</span></h1>
           <p class="role">IT Support · Full-Stack Web Developer</p>
           <div class="socials">
-            <a href="https://github.com/Yujisay" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <a href="https://github.com/eugonzales" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             </a>
             <a href="https://www.linkedin.com/in/gonzaleseugene/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
@@ -104,7 +107,7 @@
       <section class="content-section" id="projects">
         <div class="section-heading">
           <h2>Projects</h2>
-          <a href="https://github.com/Yujisay" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+          <a href="https://github.com/eugonzales" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
         </div>
         <div class="project-grid">
           <article class="project-card">
@@ -129,7 +132,6 @@
               <div class="project-tags"><span>Node.js</span><span>Express</span><span>TypeScript</span><span>Electron</span></div>
             </div>
             <a class="project-link" href="han12.html">VIEW APP SLIDESHOW <span>↗</span></a>
-            <a class="project-link" href="mailto:eugenepamz@gmail.com?subject=Han12%20Study%20Hub">ASK ABOUT THIS PROJECT <span>↗</span></a>
           </article>
           <article class="project-card">
             <div class="project-art omada-art" aria-hidden="true">
@@ -149,7 +151,6 @@
               <div class="project-tags"><span>Networking</span><span>Wi-Fi</span><span>Omada</span></div>
             </div>
             <a class="project-link" href="omada.html">VIEW NETWORK SLIDESHOW <span>↗</span></a>
-            <a class="project-link" href="mailto:eugenepamz@gmail.com?subject=Omada%20Network%20Setup">ASK ABOUT THIS PROJECT <span>↗</span></a>
           </article>
           <article class="project-card">
             <div class="project-art bracketforge-art" aria-hidden="true">
@@ -178,7 +179,21 @@
               <div class="project-tags"><span>Tournaments</span><span>Brackets</span><span>Web App</span></div>
             </div>
             <a class="project-link" href="https://tournament-bracket-yuj.vercel.app/" target="_blank" rel="noopener noreferrer">OPEN LIVE APP <span>↗</span></a>
-            <a class="project-link" href="mailto:eugenepamz@gmail.com?subject=BracketForge">ASK ABOUT THIS PROJECT <span>↗</span></a>
+          </article>
+          <article class="project-card">
+            <div class="project-art coffee-shop-art" aria-hidden="true">
+              <div class="coffee-shop-brand">
+                <strong>mia.kape</strong>
+                <small>GOOD COFFEE · GOOD COMPANY</small>
+              </div>
+            </div>
+            <div class="project-copy">
+              <h3>mia.kape Coffee Shop</h3>
+              <p class="project-role">Coffee Shop Website</p>
+              <p>A neighborhood coffee shop site with an interactive menu, brand story, location details, and pickup-order links.</p>
+              <div class="project-tags"><span>Coffee Shop</span><span>Menu</span><span>Vercel</span></div>
+            </div>
+            <a class="project-link" href="https://coffee-shop-olive-tau.vercel.app/" target="_blank" rel="noopener noreferrer">VISIT LIVE SITE <span>↗</span></a>
           </article>
           <article class="project-card upcoming-card">
             <div class="project-art upcoming-art" aria-hidden="true"><span>10<span>+</span></span><small>SYSTEMS BUILT</small></div>
@@ -191,19 +206,71 @@
             <a class="project-link" href="mailto:eugenepamz@gmail.com">GET IN TOUCH <span>↗</span></a>
           </article>
         </div>
-        <a class="section-button" href="https://github.com/Yujisay" target="_blank" rel="noopener noreferrer">Explore GitHub <span>›</span></a>
+        <a class="section-button" href="https://github.com/eugonzales" target="_blank" rel="noopener noreferrer">Explore GitHub <span>›</span></a>
       </section>
 
       <section class="content-section highlights-section" id="highlights">
         <div class="section-heading">
           <h2>Technologies</h2>
-          <span class="section-note">Tools I use</span>
+          <a href="tech-stack.html">View All <span>›</span></a>
         </div>
-        <div class="technology-list">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span>
-          <span>Node.js</span><span>Express</span><span>Tailwind CSS</span><span>Supabase</span>
-          <span>Electron</span><span>Git</span><span>GitHub</span><span>n8n</span><span>Gemini</span>
-          <span>PC Support</span><span>Networking</span>
+        <div class="technology-marquee" role="group" aria-label="Technology logos">
+          <div class="technology-marquee-row">
+            <div class="technology-marquee-track">
+              <div class="technology-list technology-marquee-group">
+                <span><img src="assets/technology-logos/html5.svg" alt="" aria-hidden="true">HTML</span>
+                <span><img src="assets/technology-logos/css3.svg" alt="" aria-hidden="true">CSS</span>
+                <span><img src="assets/technology-logos/javascript.svg" alt="" aria-hidden="true">JavaScript</span>
+                <span><img src="assets/technology-logos/typescript.svg" alt="" aria-hidden="true">TypeScript</span>
+                <span><img src="assets/technology-logos/tailwindcss.svg" alt="" aria-hidden="true">Tailwind CSS</span>
+                <span><img src="assets/technology-logos/vite.svg" alt="" aria-hidden="true">Vite</span>
+                <span><img src="assets/technology-logos/figma.svg" alt="" aria-hidden="true">Figma</span>
+                <span><img src="assets/technology-logos/canva.svg" alt="" aria-hidden="true">Canva</span>
+                <span><img src="assets/technology-logos/capcut.svg" alt="" aria-hidden="true">CapCut</span>
+                <span><img src="assets/technology-logos/microsoftexcel.svg" alt="" aria-hidden="true">Excel</span>
+                <span><img src="assets/technology-logos/seo.svg" alt="" aria-hidden="true">SEO Optimization</span>
+                <span><img src="assets/technology-logos/googleanalytics.svg" alt="" aria-hidden="true">Google Analytics</span>
+                <span><img src="assets/technology-logos/googlesearchconsole.svg" alt="" aria-hidden="true">Google Search Console</span>
+              </div>
+            </div>
+          </div>
+          <div class="technology-marquee-row is-reversed">
+            <div class="technology-marquee-track">
+              <div class="technology-list technology-marquee-group">
+                <span><img src="assets/technology-logos/nodejs.svg" alt="" aria-hidden="true">Node.js</span>
+                <span><img src="assets/technology-logos/express.svg" alt="" aria-hidden="true">Express</span>
+                <span><img src="assets/technology-logos/php.svg" alt="" aria-hidden="true">PHP</span>
+                <span><img src="assets/technology-logos/csharp.svg" alt="" aria-hidden="true">C#</span>
+                <span><img src="assets/technology-logos/cplusplus.svg" alt="" aria-hidden="true">C++</span>
+                <span><img src="assets/technology-logos/python.svg" alt="" aria-hidden="true">Python</span>
+                <span><img src="assets/technology-logos/rust.svg" alt="" aria-hidden="true">Rust</span>
+                <span><img src="assets/technology-logos/sqlite.svg" alt="" aria-hidden="true">SQLite</span>
+                <span><img src="assets/technology-logos/docker.svg" alt="" aria-hidden="true">Docker</span>
+                <span><img src="assets/technology-logos/supabase.svg" alt="" aria-hidden="true">Supabase</span>
+                <span><img src="assets/technology-logos/electron.svg" alt="" aria-hidden="true">Electron</span>
+                <span><img src="assets/technology-logos/pc-support.svg" alt="" aria-hidden="true">PC Support</span>
+              </div>
+            </div>
+          </div>
+          <div class="technology-marquee-row">
+            <div class="technology-marquee-track">
+              <div class="technology-list technology-marquee-group">
+                <span><img src="assets/technology-logos/git.svg" alt="" aria-hidden="true">Git</span>
+                <span><img src="assets/technology-logos/github.svg" alt="" aria-hidden="true">GitHub</span>
+                <span><img src="assets/technology-logos/githubactions.svg" alt="" aria-hidden="true">GitHub Actions</span>
+                <span><img src="assets/technology-logos/n8n.svg" alt="" aria-hidden="true">n8n</span>
+                <span><img src="assets/technology-logos/anthropic.svg" alt="" aria-hidden="true">Claude</span>
+                <span><img src="assets/technology-logos/gemini.svg" alt="" aria-hidden="true">Gemini AI API</span>
+                <span><img src="assets/technology-logos/openai.svg" alt="" aria-hidden="true">OpenAI API</span>
+                <span><img src="assets/technology-logos/groq.svg" alt="" aria-hidden="true">Groq API</span>
+                <span><img src="assets/technology-logos/prompt-engineering.svg" alt="" aria-hidden="true">Prompt Engineering</span>
+                <span><img src="assets/technology-logos/googleadsense.svg" alt="" aria-hidden="true">Google AdSense</span>
+                <span><img src="assets/technology-logos/googlemybusiness.svg" alt="" aria-hidden="true">Google My Business</span>
+                <span><img src="assets/technology-logos/mailchimp.svg" alt="" aria-hidden="true">Mailchimp</span>
+                <span><img src="assets/technology-logos/networking.svg" alt="" aria-hidden="true">Networking</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="subsection-heading">
@@ -212,7 +279,6 @@
         </div>
         <article class="credential-card">
           <time>2026</time>
-          <div class="credential-mark" aria-hidden="true">NC II</div>
           <div><h3>Computer Systems Servicing</h3><p>TESDA · National Certificate II</p></div>
         </article>
 
@@ -233,11 +299,11 @@
         <div class="section-heading">
           <h2>Outside the IDE</h2>
         </div>
-        <a class="github-panel" href="https://github.com/Yujisay" target="_blank" rel="noopener noreferrer">
+        <a class="github-panel" href="https://github.com/eugonzales" target="_blank" rel="noopener noreferrer">
           <span class="github-mark" aria-hidden="true">
             <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
           </span>
-          <span><strong>Find me on GitHub</strong><small>github.com/Yujisay</small></span>
+          <span><strong>Find me on GitHub</strong><small>github.com/eugonzales</small></span>
           <span class="panel-arrow">↗</span>
         </a>
 
@@ -272,6 +338,6 @@
       <span>Work with Eugene</span>
     </a>
 
-    <script src="script.js?v=5"></script>
+    <script src="script.js?v=6"></script>
   </body>
 </html>

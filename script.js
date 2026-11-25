@@ -33,6 +33,19 @@ if (avatar) {
 
 const projectSlideshow = document.querySelector(".project-slideshow");
 
+document.querySelectorAll(".technology-marquee-track").forEach((track) => {
+  const group = track.querySelector(".technology-marquee-group");
+
+  if (!group || track.dataset.duplicated === "true") {
+    return;
+  }
+
+  const duplicate = group.cloneNode(true);
+  duplicate.setAttribute("aria-hidden", "true");
+  track.append(duplicate);
+  track.dataset.duplicated = "true";
+});
+
 if (projectSlideshow) {
   const slides = Array.from(projectSlideshow.querySelectorAll(".project-slide"));
   const dots = Array.from(projectSlideshow.querySelectorAll(".project-slide-dot"));
