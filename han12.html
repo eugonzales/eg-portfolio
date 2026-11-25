@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Han12 Study Hub | Eugene Gonzales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=6" />
+  </head>
+  <body>
+    <header class="topbar">
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Eugene Gonzales home">EG</a>
+        <div class="nav-links">
+          <a href="index.html#projects">Portfolio</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="project-detail-main">
+      <a class="project-back-link" href="index.html#projects"><span aria-hidden="true">←</span> All projects</a>
+
+      <header class="project-detail-intro">
+        <p class="project-eyebrow">Portfolio project</p>
+        <h1>Han12 Study Hub</h1>
+        <p>A Wi-Fi study session booking and management app with customer and admin workflows, live session tracking, and sales reporting.</p>
+        <div class="project-tags">
+          <span>Node.js</span><span>Express</span><span>TypeScript</span><span>Electron</span>
+        </div>
+      </header>
+
+      <section
+        class="project-slideshow"
+        aria-label="Han12 app screenshots. Use the arrow keys, controls, or swipe to browse."
+        tabindex="0"
+      >
+        <div class="project-slide-stage">
+          <figure class="project-slide is-active" data-caption="Customer booking" data-summary="Reserve a study session by entering a name, choosing a seat, and selecting a duration." aria-hidden="false">
+            <img src="assets/han12-customer-booking.png" alt="Han12 customer booking screen with seat type and duration choices" />
+          </figure>
+          <figure class="project-slide" data-caption="Admin login" data-summary="A password-protected entry point for the study hub's administrative tools." aria-hidden="true">
+            <img src="assets/han12-admin-login.png" alt="Han12 administrator login screen" />
+          </figure>
+          <figure class="project-slide" data-caption="Operations dashboard" data-summary="See a snapshot of active sessions, earnings, pending approvals, and bookings." aria-hidden="true">
+            <img src="assets/han12-admin-dashboard.png" alt="Han12 admin operations dashboard with session and earnings summaries" />
+          </figure>
+          <figure class="project-slide" data-caption="Sales report" data-summary="Review session records and earnings across selected dates." aria-hidden="true">
+            <img src="assets/han12-sales-report.png" alt="Han12 sales report with earnings totals and session records" />
+          </figure>
+          <figure class="project-slide" data-caption="Session activity log" data-summary="Track bookings through approval and session completion in an activity timeline." aria-hidden="true">
+            <img src="assets/han12-session-log.png" alt="Han12 session activity log showing booking, approval, and session end events" />
+          </figure>
+          <figure class="project-slide" data-caption="Admin settings" data-summary="Manage administrator credentials and configure session archiving." aria-hidden="true">
+            <img src="assets/han12-admin-settings.png" alt="Han12 admin settings for password changes and session archiving" />
+          </figure>
+        </div>
+
+        <div class="project-slide-controls">
+          <button class="project-slide-control" type="button" data-slide-step="-1" aria-label="Previous screenshot">← Previous</button>
+          <p class="project-slide-status">1 of 6 — Customer booking</p>
+          <button class="project-slide-control" type="button" data-slide-step="1" aria-label="Next screenshot">Next →</button>
+        </div>
+
+        <p class="project-slide-summary" aria-live="polite" aria-atomic="true">Reserve a study session by entering a name, choosing a seat, and selecting a duration.</p>
+
+        <div class="project-slide-dots" role="group" aria-label="Choose a screenshot">
+          <button class="project-slide-dot" type="button" data-slide-index="0" aria-label="Show screenshot 1: Customer booking" aria-current="true"></button>
+          <button class="project-slide-dot" type="button" data-slide-index="1" aria-label="Show screenshot 2: Admin login"></button>
+          <button class="project-slide-dot" type="button" data-slide-index="2" aria-label="Show screenshot 3: Operations dashboard"></button>
+          <button class="project-slide-dot" type="button" data-slide-index="3" aria-label="Show screenshot 4: Sales report"></button>
+          <button class="project-slide-dot" type="button" data-slide-index="4" aria-label="Show screenshot 5: Session activity log"></button>
+          <button class="project-slide-dot" type="button" data-slide-index="5" aria-label="Show screenshot 6: Admin settings"></button>
+        </div>
+      </section>
+
+      <p class="project-detail-note">Use the arrows, keyboard arrow keys, or swipe on a touch screen to explore the customer booking flow and admin tools.</p>
+    </main>
+
+    <script src="script.js?v=5"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omada Network Setup | Eugene Gonzales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=6" />
+  </head>
+  <body>
+    <header class="topbar">
+      <nav class="nav-shell" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Eugene Gonzales home">EG</a>
+        <div class="nav-links">
+          <a href="index.html#projects">Portfolio</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="project-detail-main">
+      <a class="project-back-link" href="index.html#projects"><span aria-hidden="true">←</span> All projects</a>
+
+      <header class="project-detail-intro">
+        <p class="project-eyebrow">Portfolio project</p>
+        <h1>Omada Network Setup</h1>
+        <p>Hands-on TP-Link Omada Controller setup for VLAN segmentation, access point management, and network monitoring.</p>
+        <div class="project-tags">
+          <span>Omada Controller</span><span>VLANs</span><span>Wi-Fi</span><span>Networking</span>
+        </div>
+      </header>
+
+      <section
+        class="project-slideshow"
+        aria-label="Omada network screenshots. Use the arrow keys, controls, or swipe to browse."
+        tabindex="0"
+      >
+        <div class="project-slide-stage">
+          <figure class="project-slide is-active" data-caption="VLAN and topology configuration" data-summary="View VLAN configuration alongside a high-level network topology." aria-hidden="false">
+            <img src="assets/omada-vlan-topology.png" alt="Omada VLAN configuration and network topology with network addresses redacted" />
+          </figure>
+          <figure class="project-slide" data-caption="Access point status" data-summary="Check access point connectivity, throughput, and channel utilization." aria-hidden="true">
+            <img src="assets/omada-access-point.png" alt="Omada access point overview with connection and channel utilization metrics; device identifiers are redacted" />
+          </figure>
+          <figure class="project-slide" data-caption="Network topology" data-summary="See the gateway, switches, access points, and connected devices in one map." aria-hidden="true">
+            <img src="assets/omada-network-topology.png" alt="Omada network topology showing connected devices with identifiers redacted" />
+          </figure>
+          <figure class="project-slide" data-caption="Network monitoring dashboard" data-summary="Monitor traffic trends, throughput, connected devices, and application usage." aria-hidden="true">
+            <img src="assets/omada-dashboard.png" alt="Omada dashboard with traffic monitoring; public IP and device identifiers are redacted" />
+          </figure>
+        </div>
+
+        <div class="project-slide-controls">
+          <button class="project-slide-control" type="button" data-slide-step="-1" aria-label="Previous screenshot">← Previous</button>
+          <p class="project-slide-status">1 of 4 — VLAN and topology configuration</p>
+          <button class="project-slide-control" type="button" data-slide-step="1" aria-label="Next screenshot">Next →</button>
+        </div>
+
+        <p class="project-slide-summary" aria-live="polite" aria-atomic="true">View VLAN configuration alongside a high-level network topology.</p>
+
+        <div class="project-slide-dots" role="group" aria-label="Choose a screenshot">
+          <button class="project-slide-dot" type="button" data-slide-index="0" aria-label="Show screenshot 1: VLAN and topology configuration" aria-current="true"></button>
+          <button class="project-slide-dot" type="button" data-slide-index="1" aria-label="Show screenshot 2: Access point status"></button>
+          <button class="project-slide-dot" type="button" data-slide-index="2" aria-label="Show screenshot 3: Network topology"></button>
+          <button class="project-slide-dot" type="button" data-slide-index="3" aria-label="Show screenshot 4: Network monitoring dashboard"></button>
+        </div>
+      </section>
+
+      <p class="project-detail-note">Browser chrome and sensitive network identifiers are redacted in these portfolio copies.</p>
+    </main>
+
+    <script src="script.js?v=5"></script>
+  </body>
+</html>
